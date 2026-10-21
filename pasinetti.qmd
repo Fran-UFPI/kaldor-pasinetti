@@ -1,0 +1,12 @@
+---
+title: "Luigi Pasinetti"
+format: html
+editor: visual
+---
+
+::: {fig-align="center"}
+![](imagem/pasinetti.jpg){width="200px"}
+
+*Luigi Pasinetti (1930–2023)*\
+[Fonte: Secodo Tempo](https://secondotempo.cattolicanews.it/news-pasinetti-studioso-controcorrente-perche-sempre-originale)
+:::

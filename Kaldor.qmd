@@ -1,0 +1,12 @@
+---
+title: "Nicholas Kaldor"
+format: html
+editor: visual
+---
+
+::: {fig-align="center"}
+![](imagem/nicolas%20kaldor.jpg){width="200px"}
+
+*Nicholas Kaldor (1908–1986)*\
+[Fonte: Alchetron](https://alchetron.com/Nicholas-Kaldor)
+:::
