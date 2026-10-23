@@ -14,14 +14,14 @@ body {
 
 a { color:inherit; text-decoration:none; }
 
-/* 1. Desfaz as caixas estruturais do Quarto para as podermos ordenar livremente */
+/* 1. Desfaz as caixas estruturais do Quarto */
 #quarto-header,
 #quarto-content,
 main.content {
   display: contents;
 }
 
-/* 2. Força TODO o conteúdo (textos, links, divs) a ficar na posição 3 (Abaixo do menu preto) */
+/* 2. Força TODO o conteúdo a ficar na posição 3 (Abaixo do menu) */
 body > *,
 #quarto-header > *,
 #quarto-content > *,
@@ -29,7 +29,7 @@ main.content > * {
   order: 3;
 }
 
-/* 3. Título Principal - Posição 1 (Topo absoluto) */
+/* 3. Título Principal - Posição 1 */
 .mast {
   order: 1 !important;
   text-align: center;
@@ -57,7 +57,7 @@ main.content > * {
   letter-spacing: 0.3px;
 }
 
-/* 4. Menu de Navegação - Posição 2 (Colado abaixo do título) */
+/* 4. Menu de Navegação - Posição 2 */
 .navbar { 
   order: 2 !important;
   background: #000 !important; 
@@ -102,7 +102,6 @@ main.content > * {
 @media (max-width: 991px) { .navbar::after { right: auto; left: 1.2rem; } }
 
 /* ---------- Estrutura das Páginas Secundárias ---------- */
-/* Restaura o alinhamento central do texto nas páginas após a quebra das caixas do Quarto */
 main.content > *:not(.mast):not(.wrap) {
   max-width: 850px;
   margin-left: auto;
@@ -119,16 +118,19 @@ main.content > *:not(.mast):not(.wrap) {
   padding: 0 1.2rem; 
 }
 
-.home { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); gap: 2rem; padding: 2.5rem 0 3.5rem; }
-.tag { display:block; font:700 .8rem Inter,sans-serif; color:var(--tag); }
+/* Aumentado o padding superior de 2.5rem para 4rem */
+.home { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); gap: 2rem; padding: 4rem 0 3.5rem; }
+
+/* Etiquetas (Tags) com texto em maiúsculas e mais espaçamento */
+.tag { display:block; font:700 .75rem Inter,sans-serif; color:var(--tag); text-transform: uppercase; letter-spacing: 0.5px; }
 .by { font:.82rem Inter,sans-serif; color:var(--mute); }
 .by strong { color:var(--ink); }
 .home h2, .home h3 { border:0 !important; padding:0 !important; }
 .home .h { font-family:Merriweather,Georgia,serif !important; line-height:1.18; margin:.3rem 0; color:var(--ink); }
 .home .h a:hover { color:var(--link); }
 
-/* Bloco das Fórmulas */
-.lead .art { background: var(--ink); padding: 1.8rem 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem; margin-bottom: 1rem; border-radius: 4px; }
+/* Bloco das Fórmulas com cantos mais arredondados e sombra */
+.lead .art { background: var(--ink); padding: 1.8rem 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 .lead .art * { color: #fff !important; margin: 0; }
 .lead .art .katex-display { margin: 0 !important; }
 .lead .art .katex { font-size: 1.35rem !important; }
