@@ -3,54 +3,61 @@ pagetitle: "Kaldor & Pasinetti"
 page-layout: custom
 toc: false
 ---
+
+::: {.mast}
+::: {.mast-title}
+Kaldor & Pasinetti
+:::
+::: {.mast-sub}
+Distribuição de renda, taxa de lucro e regimes de crescimento
+:::
+:::
+
 ::: {.wrap}
 
 ::: {.home}
 
 ::: {.lead}
 ::: {.art}
-$$r = \frac{g}{s_c}$$
+$$\frac{P}{Y} = \frac{1}{s_c - s_w} \cdot \frac{I}{Y}$$
 :::
 
-[Teorema de Pasinetti]{.tag}
+[Teoria da Distribuição de Kaldor]{.tag}
 
-## [Por que a poupança dos trabalhadores não muda a taxa de lucro](pasinetti.qmd) {.h}
+## [Capitalistas poupam mais: como a distribuição ajusta o investimento](Kaldor.qmd){.h}
 
 ::: {.deck}
-A correção de Pasinetti ao modelo de Kaldor mostra quem determina a distribuição no longo prazo.
+O modelo de Kaldor (1956) mostra como a taxa de investimento determina a partilha do rendimento entre lucros e salários.
 :::
-
-[Por **Integrante 2**]{.by}
-:::
-
-::: {.side}
-::: {.item}
-[Modelo de Kaldor]{.tag}
-
-### [Capitalistas poupam mais: como a distribuição ajusta o investimento](Kaldor.qmd) {.h}
 
 [Por **Integrante 1**]{.by}
 :::
 
+::: {.side}
 ::: {.item}
-[Crescimento]{.tag}
+[Teorema de Pasinetti]{.tag}
 
-### [As Leis de Kaldor e o papel da indústria no crescimento](leis-kaldor.qmd) {.h}
+### [Por que a poupança dos trabalhadores não muda a taxa de lucro](pasinetti.qmd){.h}
+
+[Por **Integrante 2**]{.by}
+:::
+
+::: {.item}
+[Crescimento Económico]{.tag}
+
+### [As Leis de Kaldor e o papel da indústria no crescimento](leis-kaldor.qmd){.h}
 
 [Por **Integrante 3**]{.by}
 :::
 
-::: {.row}
-::: {}
-
-
-::: {}
+::: {.item}
 [Referências]{.tag}
 
-### [Leituras do grupo](referencias.qmd) {.h}
+### [Material de Apoio](referencias.qmd){.h}
 
-Artigos originais e textos de apoio.
+Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.
 :::
 :::
 
+:::
 :::
