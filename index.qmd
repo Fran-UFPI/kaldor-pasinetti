@@ -2,6 +2,7 @@
 pagetitle: "Kaldor & Pasinetti"
 page-layout: custom
 toc: false
+css: styles.css
 ---
 
 ::: {.mast}
@@ -14,50 +15,97 @@ Distribuição de renda, taxa de lucro e regimes de crescimento
 :::
 
 ::: {.wrap}
-
 ::: {.home}
 
+::: {.main-content}
+
+<div id="slide1" class="noticia-slide" style="display: block;">
 ::: {.lead}
 ::: {.art}
-$$\frac{P}{Y} = \frac{1}{s_c - s_w} \cdot \frac{I}{Y}$$
+$$
+\frac{P}{Y} = \frac{1}{s_c - s_w} \cdot \frac{I}{Y}
+$$
 :::
-
-[Teoria da Distribuição de Kaldor]{.tag}
-
-## [Capitalistas poupam mais: como a distribuição ajusta o investimento](Kaldor.qmd){.h}
-
-::: {.deck}
-O modelo de Kaldor (1956) mostra como a taxa de investimento determina a partilha do rendimento entre lucros e salários.
+<span class="tag">Teoria da Distribuição de Kaldor</span>
+<h2 class="h"><a href="Kaldor.qmd">Capitalistas poupam mais: como a distribuição ajusta o investimento</a></h2>
+<div class="deck">
+<p>O modelo de Kaldor (1956) mostra como a taxa de investimento determina a partilha do rendimento entre lucros e salários.</p>
+</div>
+<div class="by">Por <strong>Integrante 1</strong></div>
 :::
+</div>
 
-[Por **Integrante 1**]{.by}
+<div id="slide2" class="noticia-slide" style="display: none;">
+::: {.lead}
+::: {.art}
+$$
+\frac{P}{K} = \frac{1}{s_c} \cdot \frac{I}{K}
+$$
+:::
+<span class="tag">Teorema de Pasinetti</span>
+<h2 class="h"><a href="pasinetti.qmd">Por que a poupança dos trabalhadores não muda a taxa de lucro</a></h2>
+<div class="deck">
+<p>O Teorema de Pasinetti (1962) demonstra que a taxa de lucro de longo prazo depende apenas da propensão a poupar dos capitalistas e da taxa de crescimento.</p>
+</div>
+<div class="by">Por <strong>Integrante 2</strong></div>
+:::
+</div>
+
+<div class="dots-container">
+  <span class="dot active" onclick="mostrarSlide(1)"></span>
+  <span class="dot" onclick="mostrarSlide(2)"></span>
+</div>
+
 :::
 
 ::: {.side}
 ::: {.item}
-[Teorema de Pasinetti]{.tag}
-
-### [Por que a poupança dos trabalhadores não muda a taxa de lucro](pasinetti.qmd){.h}
-
-[Por **Integrante 2**]{.by}
+<span class="tag">Crescimento Económico</span>
+<h3 class="h"><a href="leis-kaldor.qmd">As Leis de Kaldor e o papel da indústria no crescimento</a></h3>
+<div class="by">Por <strong>Integrante 3</strong></div>
 :::
 
 ::: {.item}
-[Crescimento Económico]{.tag}
-
-### [As Leis de Kaldor e o papel da indústria no crescimento](leis-kaldor.qmd){.h}
-
-[Por **Integrante 3**]{.by}
-:::
-
-::: {.item}
-[Referências]{.tag}
-
-### [Material de Apoio](referencias.qmd){.h}
-
-Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.
+<span class="tag">Referências</span>
+<h3 class="h"><a href="referencias.qmd">Material de Apoio</a></h3>
+<p style="font-size: 0.95rem; color: #333; margin-top: 0.5rem; line-height: 1.4;">Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.</p>
 :::
 :::
 
 :::
 :::
+
+<style>
+.noticia-slide { animation: fade 0.8s ease-in-out; }
+@keyframes fade { from { opacity: 0.3; } to { opacity: 1; } }
+.dots-container { text-align: center; margin-top: 2.2rem; padding-bottom: 1rem; }
+.dot { cursor: pointer; height: 10px; width: 10px; margin: 0 5px; background-color: #d9d9d9; border-radius: 50%; display: inline-block; transition: background-color 0.3s ease; }
+.dot.active, .dot:hover { background-color: #b3001b; }
+</style>
+
+<script>
+let slideIndex = 1;
+let timer;
+
+function mostrarSlide(n) {
+  clearTimeout(timer);
+  let slides = document.querySelectorAll('.noticia-slide');
+  let dots = document.querySelectorAll('.dot');
+  
+  if(!slides || slides.length === 0) return;
+
+  slides.forEach(s => s.style.display = "none");
+  dots.forEach(d => d.classList.remove("active"));
+  
+  slideIndex = n > slides.length ? 1 : n < 1 ? slides.length : n;
+  
+  slides[slideIndex - 1].style.display = "block";
+  if(dots[slideIndex - 1]) dots[slideIndex - 1].classList.add("active");
+  
+  timer = setTimeout(() => mostrarSlide(slideIndex + 1), 7000);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  timer = setTimeout(() => mostrarSlide(2), 7000);
+});
+</script>

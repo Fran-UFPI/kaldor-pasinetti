@@ -1,7 +1,8 @@
 ---
-title: "Nicholas Kaldor"
-format: html
-editor: visual
+pagetitle: "Modelo de Kaldor - Kaldor & Pasinetti"
+page-layout: custom
+toc: false
+css: styles.css
 ---
 
 ::: {fig-align="center"}

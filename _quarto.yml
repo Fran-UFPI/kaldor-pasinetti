@@ -1,44 +1,27 @@
 project:
   type: website
-  output-dir: docs
-  resources:
-    - imagem/*
-    - imagens/*
-  render:
-    - index.qmd
-    - Kaldor.qmd
-    - pasinetti.qmd
-    - leis-kaldor.qmd
-    - referencias.qmd
+  output-dir: _site
 
 website:
   title: "Kaldor & Pasinetti"
   navbar:
+    background: "#000000"
+    foreground: "#ffffff"
     search: false
-    title: false
     left:
-      - href: index.qmd
-        text: Início
-      - href: Kaldor.qmd
-        text: Modelo de Kaldor
-      - href: pasinetti.qmd
-        text: Teorema de Pasinetti
-      - href: leis-kaldor.qmd
-        text: Leis de Kaldor e Brasil
-      - href: referencias.qmd
-        text: Referências
+      - text: "Início"
+        href: index.qmd
+      - text: "Modelo de Kaldor"
+        href: Kaldor.qmd
+      - text: "Teorema de Pasinetti"
+        href: pasinetti.qmd
+      - text: "Leis de Kaldor e Brasil"
+        href: leis-kaldor.qmd
+      - text: "Referências"
+        href: referencias.qmd
 
 format:
   html:
-    theme: default
+    theme: cosmo
     css: styles.css
-    toc: true
-    toc-title: "Nesta página"
-    toc-depth: 2
-    anchor-sections: false
-    html-math-method: katex
-    smooth-scroll: true
-    lang: pt-BR
-    grid:
-      body-width: 760px
-      margin-width: 260px
+    toc: false

@@ -169,53 +169,121 @@ window.Quarto = {
 
 
 <div class="mast">
+<p><img src="logo.png" class="mast-logo" alt="Logótipo"></p>
 <div class="mast-title">
 <p>Kaldor &amp; Pasinetti</p>
 </div>
 <div class="mast-sub">
 <p>Distribuição de renda, taxa de lucro e regimes de crescimento</p>
 </div>
+<nav class="mast-nav">
+<a href="./index.html" class="active">Início</a> <a href="./Kaldor.html">Modelo de Kaldor</a> <a href="./pasinetti.html">Teorema de Pasinetti</a> <a href="./leis-kaldor.html">Leis de Kaldor e Brasil</a> <a href="./referencias.html">Referências</a>
+</nav>
 </div>
 <div class="wrap">
 <div class="home">
+<div class="main-content">
+<div id="slide1" class="noticia-slide" style="display: block;">
 <div class="lead">
 <div class="art">
-<p><span class="math display">\frac{P}{Y} = \frac{1}{s_c - s_w} \cdot \frac{I}{Y}</span></p>
+<p><span class="math display">
+\frac{P}{Y} = \frac{1}{s_c - s_w} \cdot \frac{I}{Y}
+</span></p>
 </div>
-<p><span class="tag">Teoria da Distribuição de Kaldor</span></p>
-<section id="capitalistas-poupam-mais-como-a-distribuição-ajusta-o-investimento" class="level2">
-<h2 data-anchor-id="capitalistas-poupam-mais-como-a-distribuição-ajusta-o-investimento"><a href="./Kaldor.html" class="h">Capitalistas poupam mais: como a distribuição ajusta o investimento</a></h2>
+<span class="tag">Teoria da Distribuição de Kaldor</span>
+<h2 class="h">
+<a href="./Kaldor.html">Capitalistas poupam mais: como a distribuição ajusta o investimento</a>
+</h2>
 <div class="deck">
-<p>O modelo de Kaldor (1956) mostra como a taxa de investimento determina a partilha do rendimento entre lucros e salários.</p>
+<p>
+O modelo de Kaldor (1956) mostra como a taxa de investimento determina a partilha do rendimento entre lucros e salários.
+</p>
 </div>
-<p><span class="by">Por <strong>Integrante 1</strong></span></p>
-</section>
+<div class="by">
+Por <strong>Integrante 1</strong>
+</div>
+</div>
+</div>
+<div id="slide2" class="noticia-slide" style="display: none;">
+<div class="lead">
+<div class="art">
+<p><span class="math display">
+\frac{P}{K} = \frac{1}{s_c} \cdot \frac{I}{K}
+</span></p>
+</div>
+<span class="tag">Teorema de Pasinetti</span>
+<h2 class="h">
+<a href="./pasinetti.html">Por que a poupança dos trabalhadores não muda a taxa de lucro</a>
+</h2>
+<div class="deck">
+<p>
+O Teorema de Pasinetti (1962) demonstra que a taxa de lucro de longo prazo depende apenas da propensão a poupar dos capitalistas e da taxa de crescimento.
+</p>
+</div>
+<div class="by">
+Por <strong>Integrante 2</strong>
+</div>
+</div>
+</div>
+<div class="dots-container">
+<p><span class="dot active" onclick="mostrarSlide(1)"></span> <span class="dot" onclick="mostrarSlide(2)"></span></p>
+</div>
 </div>
 <div class="side">
 <div class="item">
-<p><span class="tag">Teorema de Pasinetti</span></p>
-<section id="por-que-a-poupança-dos-trabalhadores-não-muda-a-taxa-de-lucro" class="level3">
-<h3 data-anchor-id="por-que-a-poupança-dos-trabalhadores-não-muda-a-taxa-de-lucro"><a href="./pasinetti.html" class="h">Por que a poupança dos trabalhadores não muda a taxa de lucro</a></h3>
-<p><span class="by">Por <strong>Integrante 2</strong></span></p>
-</section>
+<span class="tag">Crescimento Económico</span>
+<h3 class="h">
+<a href="./leis-kaldor.html">As Leis de Kaldor e o papel da indústria no crescimento</a>
+</h3>
+<div class="by">
+Por <strong>Integrante 3</strong>
+</div>
 </div>
 <div class="item">
-<p><span class="tag">Crescimento Económico</span></p>
-<section id="as-leis-de-kaldor-e-o-papel-da-indústria-no-crescimento" class="level3">
-<h3 data-anchor-id="as-leis-de-kaldor-e-o-papel-da-indústria-no-crescimento"><a href="./leis-kaldor.html" class="h">As Leis de Kaldor e o papel da indústria no crescimento</a></h3>
-<p><span class="by">Por <strong>Integrante 3</strong></span></p>
-</section>
-</div>
-<div class="item">
-<p><span class="tag">Referências</span></p>
-<section id="material-de-apoio" class="level3">
-<h3 data-anchor-id="material-de-apoio"><a href="./referencias.html" class="h">Material de Apoio</a></h3>
-<p>Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.</p>
-</section>
+<span class="tag">Referências</span>
+<h3 class="h">
+<a href="./referencias.html">Material de Apoio</a>
+</h3>
+<p style="font-size: 0.95rem; color: #333; margin-top: 0.5rem; line-height: 1.4;">
+Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.
+</p>
 </div>
 </div>
 </div>
 </div>
+<style>
+.noticia-slide { animation: fade 0.8s ease-in-out; }
+@keyframes fade { from { opacity: 0.3; } to { opacity: 1; } }
+.dots-container { text-align: center; margin-top: 2.2rem; padding-bottom: 1rem; }
+.dot { cursor: pointer; height: 10px; width: 10px; margin: 0 5px; background-color: #d9d9d9; border-radius: 50%; display: inline-block; transition: background-color 0.3s ease; }
+.dot.active, .dot:hover { background-color: #b3001b; }
+</style>
+<script>
+let slideIndex = 1;
+let timer;
+
+function mostrarSlide(n) {
+  clearTimeout(timer);
+  let slides = document.querySelectorAll('.noticia-slide');
+  let dots = document.querySelectorAll('.dot');
+  
+  if(!slides || slides.length === 0) return;
+
+  slides.forEach(s => s.style.display = "none");
+  dots.forEach(d => d.classList.remove("active"));
+  
+  slideIndex = n > slides.length ? 1 : n < 1 ? slides.length : n;
+  
+  slides[slideIndex - 1].style.display = "block";
+  if(dots[slideIndex - 1]) dots[slideIndex - 1].classList.add("active");
+  
+  timer = setTimeout(() => mostrarSlide(slideIndex + 1), 7000);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  timer = setTimeout(() => mostrarSlide(2), 7000);
+});
+</script>
 
 
 
