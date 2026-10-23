@@ -1,0 +1,28 @@
+---
+title: "As Leis de Kaldor e o Brasil"
+subtitle: "A indústria como motor do crescimento"
+---
+
+::: {.keys}
+**Em resumo**
+
+- (escrever aqui os 2 ou 3 pontos principais da parte)
+:::
+
+## Por que a indústria importa
+
+(texto)
+
+## As leis de Kaldor
+
+1. O crescimento do PIB está associado ao crescimento da indústria.
+2. Lei de Verdoorn: retornos crescentes na indústria.
+3. A produtividade dos demais setores cresce com a expansão da indústria.
+
+## Demanda e restrição externa
+
+(texto)
+
+## O caso brasileiro
+
+(desindustrialização, distribuição de renda e investimento)
