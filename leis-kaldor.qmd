@@ -3,26 +3,10 @@ title: "As Leis de Kaldor e o Brasil"
 subtitle: "A indústria como motor do crescimento"
 ---
 
-::: {.keys}
-**Em resumo**
+**O Caso Brasileiro sob a Ótica de Kaldor**
 
-- (escrever aqui os 2 ou 3 pontos principais da parte)
-:::
+Analisando a dinâmica da economia brasileira — com base na literatura econômica e nas estatísticas disponíveis —, observa-se que o país enfrentou um processo marcante de desindustrialização entre os anos 1980 e 1990. \
+\
+Para ilustrar essa mudança estrutural, a participação da indústria de transformação no PIB brasileiro sofreu uma retração expressiva, caindo de cerca de 32% em 1986 para patamares abaixo de 20% no final da década de 1990. Esse movimento foi impulsionado por fatores como a rápida abertura comercial e financeira e a forte apreciação cambial da época. Posteriormente, a partir de 1999, embora tenha havido momentos de reação, a indústria continuou perdendo dinamismo relativo.
 
-## Por que a indústria importa
-
-(texto)
-
-## As leis de Kaldor
-
-1. O crescimento do PIB está associado ao crescimento da indústria.
-2. Lei de Verdoorn: retornos crescentes na indústria.
-3. A produtividade dos demais setores cresce com a expansão da indústria.
-
-## Demanda e restrição externa
-
-(texto)
-
-## O caso brasileiro
-
-(desindustrialização, distribuição de renda e investimento)
+O país passou a consolidar um perfil exportador fortemente concentrado em commodities, gerando superávits no setor primário, mas déficits recorrentes em produtos industriais de maior intensidade tecnológica. Sob a perspectiva das Leis de Kaldor, essa perda de espaço da indústria é central para entendermos as amarras do desenvolvimento brasileiro. Como o setor industrial é o principal gerador de retornos crescentes de escala e de progresso técnico, a substituição da base industrial pela exportação de commodities compromete o potencial de crescimento de longo prazo da economia do país.

@@ -7,26 +7,54 @@
   --tag: #b3001b; 
 }
 
-/* Flexbox global para ordenar a barra preta e o título */
 body { 
   background: #fff; 
   color: var(--ink); 
   font-family: 'Source Serif 4', Georgia, serif; 
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 a { color: inherit; text-decoration: none; }
 
-/* 1. Título do site fica em PRIMEIRO (Order 1) */
+/* =========================================
+   1. CABEÇALHO PADRÃO DO QUARTO (Para as páginas internas)
+   ========================================= */
+#quarto-header {
+  background-color: #000 !important;
+  border: none !important;
+}
+
+.navbar {
+  background-color: #000 !important;
+  border-bottom: none !important;
+  padding: 1rem 0 !important;
+}
+
+.navbar-nav {
+  gap: 1.5rem !important;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  color: #aaa !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
+
+/* =========================================
+   2. BLOCO PRINCIPAL (Para a página Início)
+   ========================================= */
 .mast {
-  order: 1 !important;
   text-align: center;
   background: #000;
   color: #fff;
-  padding: 3.5rem 1.5rem 1rem 1.5rem;
+  padding: 4rem 1.5rem 0 1.5rem;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -38,69 +66,49 @@ a { color: inherit; text-decoration: none; }
   font-weight: 900;
   letter-spacing: -0.5px;
   line-height: 1.15;
-  color: #fff;
   margin-bottom: 0.6rem;
 }
 
 .mast-sub {
-  font-family: 'Source Serif 4', Georgia, serif;
   font-style: italic;
   font-size: clamp(0.95rem, 1.8vw, 1.15rem);
-  font-weight: 400;
   color: #ccc;
-  letter-spacing: 0.3px;
+  margin-bottom: 2.5rem;
 }
 
-/* 2. Barra do Quarto em SEGUNDO (Order 2 - Por baixo do título) */
-#quarto-header, .navbar {
-  order: 2 !important;
-  background-color: #000000 !important;
-  border: 0 !important;
-  margin: 0 !important;
-  padding-top: 0.5rem !important;
-  padding-bottom: 2rem !important;
-  box-shadow: none !important;
+.mast-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem;
 }
 
-.navbar .container-fluid {
-  display: flex !important;
-  justify-content: center !important;
+.mast-nav a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #aaa;
+  padding: 0.5rem 0;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
 }
 
-.navbar-brand {
-  display: none !important; /* Esconde o título repetido no canto */
+.mast-nav a.active,
+.mast-nav a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
-.navbar-nav {
-  display: flex !important;
-  justify-content: center !important;
-  gap: 1.8rem !important;
-  flex-wrap: wrap !important;
-}
-
-.navbar-nav .nav-link {
-  font-family: 'Inter', sans-serif !important;
-  font-size: 0.9rem !important;
-  font-weight: 600 !important;
-  color: #ccc !important;
-  transition: color 0.2s ease !important;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  color: #fff !important;
-}
-
-/* 3. Conteúdo em TERCEIRO (Order 3) */
-.wrap, #quarto-content, main {
-  order: 3 !important;
-}
-
-/* Layout da Grelha da Página Inicial */
+/* =========================================
+   3. CONTEÚDO RESTANTE
+   ========================================= */
 .wrap {
+  width: 100%;
   max-width: 1100px;
-  margin: 2.5rem auto;
+  margin: 3.5rem auto 2.5rem auto;
   padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 .home {
@@ -120,7 +128,6 @@ a { color: inherit; text-decoration: none; }
   gap: 2rem;
 }
 
-/* Caixa da Fórmula em Fundo Preto */
 .art {
   background: #000;
   color: #fff;
@@ -128,10 +135,6 @@ a { color: inherit; text-decoration: none; }
   border-radius: 8px;
   text-align: center;
   margin-bottom: 1.5rem;
-}
-
-.art .MathJax, .art .katex {
-  color: #fff !important;
 }
 
 .tag {
@@ -182,13 +185,6 @@ a { color: inherit; text-decoration: none; }
 
 .item .h {
   font-size: 1.25rem;
-}
-
-/* Páginas Internas */
-main.content {
-  max-width: 900px;
-  margin: 2.5rem auto;
-  padding: 0 1.5rem;
 }
 
 @media (max-width: 768px) {

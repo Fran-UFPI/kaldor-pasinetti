@@ -1,7 +1,9 @@
 ---
 title: "Referências"
-subtitle: "Leituras do grupo"
+subtitle: "Livros e atigos utilizados"
 toc: false
 ---
 
 
+- OREIRO, J. L.; MAGALHÃES, L. C. G. de. A equação de Cambridge e o Novo Teorema de Pasinetti nos modelos pós-keynesianos de crescimento e distribuição de renda. *Revista de Economia Política*, v. 39, n. 3 (156), p. 485-508, 2019.
+- SHASTRI, R. A.; NAGARAJ, A. *The Pasinetti paradox*. [S.l.]: EconWPA, [s.d.]. Working paper n. 9912149. Disponível em: https://econwpa.ub.uni-muenchen.de/econ-wp/test/papers/9912/9912149.pdf. Acesso em: 24 out. 2026. Versão completa publicada em *Asian Economic Review*, v. 27, n. 1-2, 1985.
