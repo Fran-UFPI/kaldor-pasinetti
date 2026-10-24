@@ -1,13 +1,173 @@
 ---
-pagetitle: "Modelo de Kaldor - Kaldor & Pasinetti"
-page-layout: custom
-toc: false
-css: styles.css
+title: "Modelo de Nicholas Kaldor"
+format: html
+editor: visual
 ---
 
 ::: {fig-align="center"}
-![](imagem/nicolas%20kaldor.jpg){width="200px"}
+![](imagem/kaldor.jpg){width="394"}
 
 *Nicholas Kaldor (1908–1986)*\
 [Fonte: Alchetron](https://alchetron.com/Nicholas-Kaldor)
 :::
+
+A teoria da distribuição de renda pós-keynesiana nasce de um problema deixado por Harrod e Domar. O crescimento com pleno emprego só se sustenta se a poupança, a relação capital-produto e a taxa natural de crescimento forem compatíveis entre si. Como essas três variáveis são determinadas fora do sistema, nada garante que a condição se cumpra, e o equilíbrio de longo prazo dependeria de uma combinação improvável de fatores: é o chamado fio da navalha (LEMOS, 2019). Kaldor propôs uma saída ao tornar a poupança endógena, de modo que a distribuição de renda entre salários e lucros passa a ser a variável de ajuste do sistema (LEMOS, 2019; ESTULANO VIEIRA; OLIVEIRA; SUGAHARA, 2024). Esta seção apresenta a lógica desse modelo, que serve de base para o Teorema de Pasinetti e para as Leis de Kaldor, tratados nos pontos seguintes.
+
+**O modelo de Kaldor (1956)**
+
+Kaldor apresentou sua teoria em *Alternative Theories of Distribution* (1955-1956). Segundo Lemos (2019), o modelo pode ser lido como uma releitura keynesiana de um problema já colocado por Ricardo. No mundo ricardiano, só os capitalistas poupam e ficam com o ganho de produtividade, o que contrariaria a lei de Say, e a solução está na demanda efetiva: se o excedente é todo poupado, surgem excessos de poupança e a economia entra em recessão.
+
+O modelo analisa uma economia fechada e sem governo, em trajetória de crescimento com pleno emprego da força de trabalho. O produto é limitado pela oferta de trabalho, e não pela demanda efetiva, e o investimento é dado exogenamente. Como o produto não pode variar, o equilíbrio entre poupança e investimento só se restabelece por mudanças na distribuição de renda (ESTULANO VIEIRA; OLIVEIRA; SUGAHARA, 2024).
+
+A distribuição importa porque as classes não poupam na mesma proporção. Quem possui os meios de produção e vive de lucros tem propensão a poupar acima da média, e quem vive do trabalho poupa menos (BARANZINI, 1991, apud ESTULANO VIEIRA; OLIVEIRA; SUGAHARA, 2024). Logo, quanto maior a participação dos lucros na renda, maior a poupança agregada.
+
+Partindo da renda como soma de lucros e salários, a poupança de cada classe e a condição de equilíbrio, Kaldor chega à propensão global a poupar da economia:
+
+**Renda, poupança e equilíbrio**
+
+$$Y = R + W$$
+
+$$S = s_r R + s_w W$$
+
+$$I = S$$
+
+em que:
+
+- $Y$ = renda
+- $R$ = lucros totais
+- $W$ = salários totais
+- $S$ = poupança
+- $s_r$ = propensão a poupar dos capitalistas
+- $s_w$ = propensão a poupar dos trabalhadores
+- $I$ = investimento planejado
+
+**Substituindo** $W = Y - R$
+
+$$I = (s_r - s_w) R + s_w Y$$
+
+**Propensão global a poupar** (dividindo por $Y$)
+
+$$\frac{I}{Y} = (s_r - s_w) \frac{R}{Y} + s_w$$
+
+em que:
+
+- $I/Y = s$ = propensão média e marginal a poupar da economia
+- $R/Y$ = participação dos lucros na renda (as "margens de lucro" de Kaldor)
+
+**Participação dos lucros na renda** (isolando $R/Y$)
+
+$$\frac{R}{Y} = \frac{1}{s_r - s_w} \frac{I}{Y} - \frac{s_w}{s_r - s_w}$$
+
+**Caso limite: os trabalhadores não poupam** ($s_w = 0$)
+
+$$\frac{R}{Y} = \frac{1}{s_r} \frac{I}{Y}$$
+
+**Taxa garantida de crescimento segundo Kaldor**
+
+$$g_w' = \frac{s_r \, (R/Y)}{v}$$
+
+em que:
+
+- $g_w'$ = taxa garantida de crescimento segundo Kaldor
+- $v$ = relação capital-produto
+
+**Equilíbrio de longo prazo**
+
+$$g_n = \frac{s_r \, (R/Y)}{v}$$
+
+em que:
+
+- $g_n$ = taxa natural de crescimento (população e progresso técnico)
+
+Assim, é a distribuição de renda que se ajusta para igualar poupança e investimento, e o equilíbrio com pleno emprego passa a ser alcançado por esse ajuste, e não por acaso (LEMOS, 2019).
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12.5
+#| fig-height: 5.5
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# 1. Parâmetros Base
+sw <- 0.05
+pi_vals <- seq(0, 1, by = 0.01)
+
+# Cenários
+# 1. Base (I/Y = 20%, sc = 50%)
+IY_1 <- 0.20; sc_1 <- 0.50; eq_1 <- (IY_1 - sw) / (sc_1 - sw)
+# 2. Queda na Poupança (sc = 30%)
+IY_2 <- 0.20; sc_2 <- 0.30; eq_2 <- (IY_2 - sw) / (sc_2 - sw)
+# 3. Alta no Investimento (I/Y = 25%)
+IY_3 <- 0.25; sc_3 <- 0.50; eq_3 <- (IY_3 - sw) / (sc_3 - sw)
+
+# 2. Base de Dados
+dados <- data.frame(
+  pi = rep(pi_vals, 3),
+  Cenario = factor(rep(c("Cenário 1: Equilíbrio Base\n(I/Y = 20% | sc = 50%)", 
+                         "Cenário 2: Queda na Poupança Capitalista\n(sc cai para 30%)", 
+                         "Cenário 3: Choque Positivo de Investimento\n(I/Y sobe para 25%)"), 
+                       each = length(pi_vals))),
+  S_Y = c(sw + (sc_1 - sw) * pi_vals, sw + (sc_2 - sw) * pi_vals, sw + (sc_3 - sw) * pi_vals),
+  I_Y = c(rep(IY_1, length(pi_vals)), rep(IY_2, length(pi_vals)), rep(IY_3, length(pi_vals))),
+  eq_pi = rep(c(eq_1, eq_2, eq_3), each = length(pi_vals)),
+  eq_iy = rep(c(IY_1, IY_2, IY_3), each = length(pi_vals))
+)
+
+# 3. Gráfico Académico Refinado
+ggplot(dados, aes(x = pi)) +
+  # Linhas principais
+  geom_line(aes(y = S_Y, color = "Poupança Agregada (S/Y)"), linewidth = 1.2) +
+  geom_line(aes(y = I_Y, color = "Investimento Exógeno (I/Y)"), linewidth = 1.2, linetype = "twodash") +
+  
+  # Linhas de projeção (pontilhadas) para os eixos
+  geom_segment(aes(x = eq_pi, xend = eq_pi, y = 0, yend = eq_iy), linetype = "dotted", color = "grey40", linewidth = 0.8) +
+  geom_segment(aes(x = 0, xend = eq_pi, y = eq_iy, yend = eq_iy), linetype = "dotted", color = "grey40", linewidth = 0.8) +
+  
+  # Ponto de Equilíbrio
+  geom_point(aes(x = eq_pi, y = eq_iy), color = "#c0392b", size = 4) +
+  geom_point(aes(x = eq_pi, y = eq_iy), color = "#c0392b", size = 6, shape = 1) + # Halo em volta do ponto
+  
+  # Rótulo do Equilíbrio
+  geom_text(data = unique(dados[, c("Cenario", "eq_pi", "eq_iy")]),
+            aes(x = eq_pi + 0.05, y = eq_iy + 0.02, 
+                label = paste0("\U03C0* = ", scales::percent(eq_pi, accuracy = 1))),
+            color = "#c0392b", fontface = "bold", size = 4.5, hjust = 0) +
+  
+  facet_wrap(~Cenario) +
+  
+  # Estética e Escalas
+  scale_color_manual(values = c("Poupança Agregada (S/Y)" = "#2980b9", "Investimento Exógeno (I/Y)" = "#e67e22")) +
+  scale_x_continuous(labels = scales::percent_format(accuracy = 1), breaks = seq(0, 1, by = 0.2)) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1), limits = c(0, 0.45), breaks = seq(0, 0.4, by = 0.1)) +
+  
+  labs(title = "Estática Comparativa: Dinâmica de Ajuste no Modelo de Kaldor",
+       subtitle = "O lucro (\U03C0) como variável endógena de fechamento macroeconómico",
+       x = "Participação dos Lucros na Renda Nacional (\U03C0)", 
+       y = "Proporção da Renda", 
+       color = NULL,
+       caption = "Fonte: Produzido pelo grupo com valores mensuráveis em um cenário hipotético.") +
+  
+  # Tema limpo
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "bottom",
+    plot.title = element_text(face = "bold", hjust = 0.5, size = 16),
+    plot.subtitle = element_text(hjust = 0.5, color = "grey30", margin = margin(b = 15)),
+    plot.caption = element_text(hjust = 1, face = "italic", color = "grey40", size = 11, margin = margin(t = 15)),
+    strip.text = element_text(face = "bold", color = "white", size = 11),
+    strip.background = element_rect(fill = "#34495e", color = NA),
+    panel.border = element_rect(color = "grey80", fill = NA, linewidth = 1),
+    panel.grid.minor = element_blank(),
+    panel.spacing = unit(2, "lines")
+  )
+```
+
+
+Em A Model of Economic Growth (1957), Kaldor transpôs a teoria da distribuição para a análise do crescimento de longo prazo. Lemos (2019) destaca que esse modelo foge à tradição keynesiana em pontos como a flexibilidade dos preços, o pleno emprego e a ausência de uma teoria da taxa de juros.
+
+Em Marginal Productivity and the Macro-Economic Theories of Distribution (1966), Kaldor respondeu a Samuelson e Modigliani na controvérsia do capital e incorporou as corporações, que financiam parte do investimento. Com isso, a taxa de lucro passa a ser $r = \frac{g_n (1 - f)}{s_c}$, em que f é a fração do investimento financiada externamente e s_c é a taxa de retenção de lucros das corporações. Quando f = 0, volta-se à fórmula simples de Pasinetti, $r = \frac{g_n}{s_c}$ (LEMOS, 2019).
+
+Foi nesse debate que surgiram as críticas. Samuelson (1964, apud LEMOS, 2019) chamou Kaldor de “Jean Baptiste Kaldor”, o que remete a Say, pela ênfase no longo prazo e pelo papel que atribui à taxa de juros no ajuste ao pleno emprego. Davidson (1968, apud LEMOS, 2019) reforça a crítica ao notar que, nessa formulação, a taxa de juros garantiria que a demanda efetiva estivesse sempre no nível de pleno emprego. Esse debate leva ao passo seguinte da teoria, em que Pasinetti passa a dividir a economia em classes de pessoas.

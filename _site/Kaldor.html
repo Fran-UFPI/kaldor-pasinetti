@@ -2,23 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modelo de Kaldor - Kaldor &amp; Pasinetti – Kaldor &amp; Pasinetti</title>
+<title>Modelo de Nicholas Kaldor – Kaldor &amp; Pasinetti</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d06f58d9692ecfc13aec800cfff484f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-95defdff14b29825dbe6da19107787f3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -122,23 +148,100 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div data-fig-align="center">
-<p><img src="imagem/nicolas kaldor.jpg" class="img-fluid" width="200"></p>
-<p><em>Nicholas Kaldor (1908–1986)</em><br>
-<a href="https://alchetron.com/Nicholas-Kaldor">Fonte: Alchetron</a></p>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Modelo de Nicholas Kaldor</h1>
 </div>
 
 
 
+<div class="quarto-title-meta">
 
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div data-fig-align="center">
+<p><img src="imagem/kaldor.jpg" class="img-fluid" width="394"></p>
+<p><em>Nicholas Kaldor (1908–1986)</em><br>
+<a href="https://alchetron.com/Nicholas-Kaldor">Fonte: Alchetron</a></p>
+</div>
+<p>A teoria da distribuição de renda pós-keynesiana nasce de um problema deixado por Harrod e Domar. O crescimento com pleno emprego só se sustenta se a poupança, a relação capital-produto e a taxa natural de crescimento forem compatíveis entre si. Como essas três variáveis são determinadas fora do sistema, nada garante que a condição se cumpra, e o equilíbrio de longo prazo dependeria de uma combinação improvável de fatores: é o chamado fio da navalha (LEMOS, 2019). Kaldor propôs uma saída ao tornar a poupança endógena, de modo que a distribuição de renda entre salários e lucros passa a ser a variável de ajuste do sistema (LEMOS, 2019; ESTULANO VIEIRA; OLIVEIRA; SUGAHARA, 2024). Esta seção apresenta a lógica desse modelo, que serve de base para o Teorema de Pasinetti e para as Leis de Kaldor, tratados nos pontos seguintes.</p>
+<p><strong>O modelo de Kaldor (1956)</strong></p>
+<p>Kaldor apresentou sua teoria em <em>Alternative Theories of Distribution</em> (1955-1956). Segundo Lemos (2019), o modelo pode ser lido como uma releitura keynesiana de um problema já colocado por Ricardo. No mundo ricardiano, só os capitalistas poupam e ficam com o ganho de produtividade, o que contrariaria a lei de Say, e a solução está na demanda efetiva: se o excedente é todo poupado, surgem excessos de poupança e a economia entra em recessão.</p>
+<p>O modelo analisa uma economia fechada e sem governo, em trajetória de crescimento com pleno emprego da força de trabalho. O produto é limitado pela oferta de trabalho, e não pela demanda efetiva, e o investimento é dado exogenamente. Como o produto não pode variar, o equilíbrio entre poupança e investimento só se restabelece por mudanças na distribuição de renda (ESTULANO VIEIRA; OLIVEIRA; SUGAHARA, 2024).</p>
+<p>A distribuição importa porque as classes não poupam na mesma proporção. Quem possui os meios de produção e vive de lucros tem propensão a poupar acima da média, e quem vive do trabalho poupa menos (BARANZINI, 1991, apud ESTULANO VIEIRA; OLIVEIRA; SUGAHARA, 2024). Logo, quanto maior a participação dos lucros na renda, maior a poupança agregada.</p>
+<p>Partindo da renda como soma de lucros e salários, a poupança de cada classe e a condição de equilíbrio, Kaldor chega à propensão global a poupar da economia:</p>
+<p><strong>Renda, poupança e equilíbrio</strong></p>
+<p><span class="math display">\[Y = R + W\]</span></p>
+<p><span class="math display">\[S = s_r R + s_w W\]</span></p>
+<p><span class="math display">\[I = S\]</span></p>
+<p>em que:</p>
+<ul>
+<li><span class="math inline">\(Y\)</span> = renda</li>
+<li><span class="math inline">\(R\)</span> = lucros totais</li>
+<li><span class="math inline">\(W\)</span> = salários totais</li>
+<li><span class="math inline">\(S\)</span> = poupança</li>
+<li><span class="math inline">\(s_r\)</span> = propensão a poupar dos capitalistas</li>
+<li><span class="math inline">\(s_w\)</span> = propensão a poupar dos trabalhadores</li>
+<li><span class="math inline">\(I\)</span> = investimento planejado</li>
+</ul>
+<p><strong>Substituindo</strong> <span class="math inline">\(W = Y - R\)</span></p>
+<p><span class="math display">\[I = (s_r - s_w) R + s_w Y\]</span></p>
+<p><strong>Propensão global a poupar</strong> (dividindo por <span class="math inline">\(Y\)</span>)</p>
+<p><span class="math display">\[\frac{I}{Y} = (s_r - s_w) \frac{R}{Y} + s_w\]</span></p>
+<p>em que:</p>
+<ul>
+<li><span class="math inline">\(I/Y = s\)</span> = propensão média e marginal a poupar da economia</li>
+<li><span class="math inline">\(R/Y\)</span> = participação dos lucros na renda (as “margens de lucro” de Kaldor)</li>
+</ul>
+<p><strong>Participação dos lucros na renda</strong> (isolando <span class="math inline">\(R/Y\)</span>)</p>
+<p><span class="math display">\[\frac{R}{Y} = \frac{1}{s_r - s_w} \frac{I}{Y} - \frac{s_w}{s_r - s_w}\]</span></p>
+<p><strong>Caso limite: os trabalhadores não poupam</strong> (<span class="math inline">\(s_w = 0\)</span>)</p>
+<p><span class="math display">\[\frac{R}{Y} = \frac{1}{s_r} \frac{I}{Y}\]</span></p>
+<p><strong>Taxa garantida de crescimento segundo Kaldor</strong></p>
+<p><span class="math display">\[g_w' = \frac{s_r \, (R/Y)}{v}\]</span></p>
+<p>em que:</p>
+<ul>
+<li><span class="math inline">\(g_w'\)</span> = taxa garantida de crescimento segundo Kaldor</li>
+<li><span class="math inline">\(v\)</span> = relação capital-produto</li>
+</ul>
+<p><strong>Equilíbrio de longo prazo</strong></p>
+<p><span class="math display">\[g_n = \frac{s_r \, (R/Y)}{v}\]</span></p>
+<p>em que:</p>
+<ul>
+<li><span class="math inline">\(g_n\)</span> = taxa natural de crescimento (população e progresso técnico)</li>
+</ul>
+<p>Assim, é a distribuição de renda que se ajusta para igualar poupança e investimento, e o equilíbrio com pleno emprego passa a ser alcançado por esse ajuste, e não por acaso (LEMOS, 2019).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Kaldor_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Em A Model of Economic Growth (1957), Kaldor transpôs a teoria da distribuição para a análise do crescimento de longo prazo. Lemos (2019) destaca que esse modelo foge à tradição keynesiana em pontos como a flexibilidade dos preços, o pleno emprego e a ausência de uma teoria da taxa de juros.</p>
+<p>Em Marginal Productivity and the Macro-Economic Theories of Distribution (1966), Kaldor respondeu a Samuelson e Modigliani na controvérsia do capital e incorporou as corporações, que financiam parte do investimento. Com isso, a taxa de lucro passa a ser <span class="math inline">\(r = \frac{g_n (1 - f)}{s_c}\)</span>, em que f é a fração do investimento financiada externamente e s_c é a taxa de retenção de lucros das corporações. Quando f = 0, volta-se à fórmula simples de Pasinetti, <span class="math inline">\(r = \frac{g_n}{s_c}\)</span> (LEMOS, 2019).</p>
+<p>Foi nesse debate que surgiram as críticas. Samuelson (1964, apud LEMOS, 2019) chamou Kaldor de “Jean Baptiste Kaldor”, o que remete a Say, pela ênfase no longo prazo e pelo papel que atribui à taxa de juros no ajuste ao pleno emprego. Davidson (1968, apud LEMOS, 2019) reforça a crítica ao notar que, nessa formulação, a taxa de juros garantiria que a demanda efetiva estivesse sempre no nível de pleno emprego. Esse debate leva ao passo seguinte da teoria, em que Pasinetti passa a dividir a economia em classes de pessoas.</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

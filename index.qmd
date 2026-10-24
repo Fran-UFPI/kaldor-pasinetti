@@ -5,76 +5,106 @@ toc: false
 css: styles.css
 ---
 
-::: {.mast}
-::: {.mast-title}
+::::: mast
+::: mast-title
 Kaldor & Pasinetti
 :::
-::: {.mast-sub}
+
+::: mast-sub
 Distribuição de renda, taxa de lucro e regimes de crescimento
 :::
+:::::
+
+:::::::::::::::::::: wrap
+::::::::::::::::::: home
+:::::::::::::: main-content
+::::::: {#slide1 .noticia-slide style="display: block;"}
+:::::: lead
+::: art
+$$\frac{P}{Y} = \frac{1}{s_c - s_w} \cdot \frac{I}{Y}$$
 :::
 
-::: {.wrap}
-::: {.home}
+[Teoria da Distribuição de Kaldor]{.tag}
 
-::: {.main-content}
+<h2 class="h">
 
-<div id="slide1" class="noticia-slide" style="display: block;">
-::: {.lead}
-::: {.art}
-$$
-\frac{P}{Y} = \frac{1}{s_c - s_w} \cdot \frac{I}{Y}
-$$
-:::
-<span class="tag">Teoria da Distribuição de Kaldor</span>
-<h2 class="h"><a href="Kaldor.qmd">Capitalistas poupam mais: como a distribuição ajusta o investimento</a></h2>
-<div class="deck">
+<a href="Kaldor.qmd">Capitalistas poupam mais: como a distribuição ajusta o investimento</a>
+
+</h2>
+
+::: deck
 <p>O modelo de Kaldor (1956) mostra como a taxa de investimento determina a partilha do rendimento entre lucros e salários.</p>
-</div>
-<div class="by">Por <strong>Integrante 1</strong></div>
 :::
-</div>
 
-<div id="slide2" class="noticia-slide" style="display: none;">
-::: {.lead}
-::: {.art}
-$$
-\frac{P}{K} = \frac{1}{s_c} \cdot \frac{I}{K}
-$$
+::: by
+Por <strong>Jullyane Alves & Francielle Mendes</strong>
 :::
-<span class="tag">Teorema de Pasinetti</span>
-<h2 class="h"><a href="pasinetti.qmd">Por que a poupança dos trabalhadores não muda a taxa de lucro</a></h2>
-<div class="deck">
+::::::
+:::::::
+
+::::::: {#slide2 .noticia-slide style="display: none;"}
+:::::: lead
+::: art
+$$\frac{P}{K} = \frac{1}{s_c} \cdot \frac{I}{K}$$
+:::
+
+[Teorema de Pasinetti]{.tag}
+
+<h2 class="h">
+
+<a href="pasinetti.qmd">Por que a poupança dos trabalhadores não muda a taxa de lucro</a>
+
+</h2>
+
+::: deck
 <p>O Teorema de Pasinetti (1962) demonstra que a taxa de lucro de longo prazo depende apenas da propensão a poupar dos capitalistas e da taxa de crescimento.</p>
-</div>
-<div class="by">Por <strong>Integrante 2</strong></div>
-:::
-</div>
-
-<div class="dots-container">
-  <span class="dot active" onclick="mostrarSlide(1)"></span>
-  <span class="dot" onclick="mostrarSlide(2)"></span>
-</div>
-
 :::
 
-::: {.side}
-::: {.item}
-<span class="tag">Crescimento Económico</span>
-<h3 class="h"><a href="leis-kaldor.qmd">As Leis de Kaldor e o papel da indústria no crescimento</a></h3>
-<div class="by">Por <strong>Integrante 3</strong></div>
+::: by
+Por <strong>Jullyane Alves & Lara Angelina</strong>
 :::
+::::::
+:::::::
 
-::: {.item}
-<span class="tag">Referências</span>
-<h3 class="h"><a href="referencias.qmd">Material de Apoio</a></h3>
-<p style="font-size: 0.95rem; color: #333; margin-top: 0.5rem; line-height: 1.4;">Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.</p>
+::: dots-container
 :::
-:::
+::::::::::::::
 
-:::
-:::
+:::::: side
+:::: item
+[Crescimento Económico]{.tag}
 
+<h3 class="h">
+
+<a href="leis-kaldor.qmd">As Leis de Kaldor e o papel da indústria no crescimento</a>
+
+</h3>
+
+::: by
+Por <strong> Lígia Alane & Jullyane Alves</strong>
+:::
+::::
+
+::: item
+[Referências]{.tag}
+
+<h3 class="h">
+
+<a href="referencias.qmd">Material de Apoio</a>
+
+</h3>
+
+<p style="font-size: 0.95rem; color: #333; margin-top: 0.5rem; line-height: 1.4;">
+
+Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.
+
+</p>
+:::
+::::::
+:::::::::::::::::::
+::::::::::::::::::::
+
+```{=html}
 <style>
 .noticia-slide { animation: fade 0.8s ease-in-out; }
 @keyframes fade { from { opacity: 0.3; } to { opacity: 1; } }
@@ -82,7 +112,9 @@ $$
 .dot { cursor: pointer; height: 10px; width: 10px; margin: 0 5px; background-color: #d9d9d9; border-radius: 50%; display: inline-block; transition: background-color 0.3s ease; }
 .dot.active, .dot:hover { background-color: #b3001b; }
 </style>
+```
 
+```{=html}
 <script>
 let slideIndex = 1;
 let timer;
@@ -109,3 +141,4 @@ document.addEventListener("DOMContentLoaded", () => {
   timer = setTimeout(() => mostrarSlide(2), 7000);
 });
 </script>
+```
