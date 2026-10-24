@@ -30,7 +30,7 @@ Distribuição de renda, taxa de lucro e regimes de crescimento
 ::: {#slide1 .noticia-slide style="display: block;"}
 ::: lead
 ::: art
-$$\frac{P}{Y} = \frac{1}{s_c - s_w} \cdot \frac{I}{Y}$$
+$$\frac{R}{Y} = \frac{1}{s_r - s_w} \frac{I}{Y} - \frac{s_w}{s_r - s_w}$$
 :::
 
 [Teoria da Distribuição de Kaldor]{.tag}
