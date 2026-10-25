@@ -11,4 +11,184 @@ editor: visual
 [Fonte: Secodo Tempo](https://secondotempo.cattolicanews.it/news-pasinetti-studioso-controcorrente-perche-sempre-originale)
 :::
 
-## 
+**Biografia**
+
+*Luigi Pasinetti (1930–2023)*
+
+Nascido em Zanica, na província de Bérgamo, Itália, foi discípulo de Piero Sraffa e um dos nomes mais importantes da tradição de Cambridge, falecendo em Milão em 2023. Ficou conhecido por aprimorar o modelo de distribuição de renda de Kaldor, demonstrando que, no longo prazo, a taxa de lucro de uma economia depende estritamente da propensão a poupar dos capitalistas e da taxa de crescimento natural.
+
+**Introdução**
+
+Um dos desdobramentos da abordagem pós-keynesiana para o "dilema de Harrod-Domar" foi a chamada equação de Cambridge, também conhecida como Teorema de Pasinetti. Ela estabelece que, ao longo de uma trajetória de crescimento balanceado com pleno emprego, em uma economia com duas classes de poupadores e na qual só os capitalistas recebem renda na forma de lucros, a taxa de lucro é igual à razão entre a taxa de crescimento da força de trabalho e a propensão a poupar dos capitalistas. A propensão a poupar dos trabalhadores deixa de ter papel na determinação da taxa de lucro (OREIRO; MAGALHÃES, 2019, p. 486).[^1]
+
+[^1]: A equação foi estabelecida originalmente por Kaldor (1956). Coube a Pasinetti mostrar que ela pode ser obtida sem qualquer referência ao valor da propensão a poupar dos trabalhadores. Por isso alguns autores, inclusive o próprio Pasinetti, preferem falar em "teorema de Cambridge" ou "processo Kaldor-Pasinetti". Neste trabalho os termos são usados como sinônimos (OREIRO; MAGALHÃES, 2019, p. 486).
+
+Uma consequência importante é que a produtividade marginal dos fatores, central na teoria neoclássica, não participa da determinação da distribuição de renda entre capitalistas e trabalhadores. A distribuição passa a depender do ritmo de acumulação e dos hábitos de poupança dos capitalistas.
+
+Esta seção apresenta o teorema, deduz o resultado, discute sua interpretação e resume as principais críticas que ele recebeu.
+
+**O ponto de partida: o modelo de Kaldor**
+
+Na seção anterior, o modelo de Kaldor (1956) mostrou que, quando os capitalistas poupam uma fração maior da renda do que os trabalhadores e o investimento é dado, a distribuição se ajusta para igualar poupança e investimento:
+
+$$\frac{R}{Y} = \frac{1}{s_r - s_w}\,\frac{I}{Y} - \frac{s_w}{s_r - s_w}$$
+
+em que:
+
+- $R$ = lucros totais
+- $Y$ = renda total
+- $I$ = investimento planejado
+- $s_r$ = propensão a poupar dos capitalistas
+- $s_w$ = propensão a poupar dos trabalhadores
+
+Quando os trabalhadores não poupam ($s_w = 0$), a expressão se reduz a:
+
+$$\frac{R}{Y} = \frac{1}{s_r}\,\frac{I}{Y} \qquad\text{e}\qquad r = \frac{g_n}{s_r}$$
+
+em que:
+
+- $r$ = taxa de lucro, isto é, lucros divididos pelo estoque de capital $K$
+- $g_n$ = taxa natural de crescimento, que no equilíbrio de longo prazo é a taxa a que o capital cresce
+
+Esse modelo tem uma limitação. Se os trabalhadores poupam ($s_w > 0$), eles acumulam ativos ao longo do tempo e passam a ser donos de parte do capital. Faz sentido, então, que recebam lucros sobre esse capital, o que Kaldor não considera: nele, os trabalhadores poupam, mas só recebem salários. Pasinetti parte exatamente dessa inconsistência.
+
+**As hipóteses do modelo**
+
+Pasinetti (1962) mantém a estrutura de Kaldor, mas permite que os dois grupos sejam proprietários de capital.
+
+**A renda se divide em salários e lucros, e o capital se divide entre os dois grupos:**
+
+$$Y = W + R \qquad\text{e}\qquad K = K_c + K_w$$
+
+em que:
+
+- $W$ = salários totais
+- $K_c$ = capital que pertence aos capitalistas
+- $K_w$ = capital que pertence aos trabalhadores
+
+**Os dois grupos recebem lucros à mesma taxa** $r$ sobre o capital que possuem:
+
+$$R = R_c + R_w \qquad\text{com}\qquad R_c = r\,K_c \quad\text{e}\quad R_w = r\,K_w$$
+
+em que:
+
+- $R_c$ = lucros recebidos pelos capitalistas
+- $R_w$ = lucros recebidos pelos trabalhadores
+
+**Os capitalistas poupam uma fração** $s_r$ dos seus lucros, e os trabalhadores poupam uma fração $s_w$ de toda a sua renda, salários mais lucros:
+
+$$S_c = s_r\,r\,K_c \qquad\text{e}\qquad S_w = s_w\,(W + r\,K_w)$$
+
+em que:
+
+- $S_c$ = poupança dos capitalistas
+- $S_w$ = poupança dos trabalhadores
+
+**O investimento é igual à poupança dos dois grupos, e o capital cresce à taxa natural:**
+
+$$I = S_c + S_w \qquad\text{e}\qquad I = g_n\,K$$
+
+Por fim, supõe-se que os capitalistas poupam proporcionalmente mais do que os trabalhadores: $s_r > s_w$.
+
+**A dedução**
+
+Considere o equilíbrio de longo prazo, em que a participação de cada grupo no capital total é constante. Isso exige que o capital dos dois grupos cresça à mesma taxa $g_n$.
+
+**Passo 1. Os capitalistas.** O capital dos capitalistas só aumenta pela poupança deles:
+
+$$\dot K_c = S_c = s_r\,r\,K_c$$
+
+em que:
+
+- $\dot K_c$ = variação do capital dos capitalistas ao longo do tempo
+
+Como $K_c$ cresce à taxa $g_n$, tem-se $g_n = \dot K_c/K_c = s_r\,r$.
+
+**Passo 2. O resultado.**
+
+$$r = \frac{g_n}{s_r}$$
+
+A propensão a poupar dos trabalhadores não aparece. No crescimento balanceado com pleno emprego, o capital cresce à taxa de crescimento da força de trabalho, que o Oreiro e Magalhães (2019, p. 486) chamam de $n$, e por isso eles escrevem a equação como $r = n/s_c$, com a notação deles.
+
+**Passo 3. Os trabalhadores.** O capital dos trabalhadores também cresce à taxa $g_n$, e a poupança deles é $S_w = s_w\,(W + r\,K_w)$. Logo,
+
+$$s_w\,(W + r\,K_w) = g_n\,K_w \quad\Rightarrow\quad K_w = \frac{s_w\,W}{g_n - s_w\,r}$$
+
+Substituindo $r = g_n/s_r$:
+
+$$K_w = \frac{s_w\,s_r\,W}{g_n\,(s_r - s_w)}$$
+
+Essa expressão é positiva apenas se $s_r > s_w$, o que explica a necessidade dessa hipótese. A propensão a poupar dos trabalhadores, portanto, não é irrelevante para o sistema: ela determina quanto do capital fica com eles.
+
+**Passo 4. A participação dos lucros na renda.** Como $R = r\,K$ e $I = g_n\,K$,
+
+$$R = \frac{g_n}{s_r}\,K = \frac{I}{s_r} \quad\Rightarrow\quad \frac{R}{Y} = \frac{1}{s_r}\,\frac{I}{Y}$$
+
+Em outras palavras, a participação dos lucros na renda é igual à razão entre investimento e renda, dividida pela propensão a poupar dos capitalistas.
+
+**Interpretação: por que a poupança dos trabalhadores não afeta a taxa de lucro**
+
+O resultado parece paradoxal: se os trabalhadores poupam e acumulam capital, por que isso não altera a taxa de lucro? A explicação está no comportamento dos dois grupos no equilíbrio. Como $g_n = s_r\,r$, a poupança dos trabalhadores é:
+
+$$S_w = g_n\,K_w = s_r\,r\,K_w = s_r\,R_w$$
+
+ou seja, é exatamente igual ao que os capitalistas teriam poupado se os lucros recebidos pelos trabalhadores fossem deles. Por isso, a poupança total do sistema é:
+
+$$S = S_w + S_c = s_r\,R_w + s_r\,R_c = s_r\,R$$
+
+em que:
+
+- $S$ = poupança total
+
+Tudo se passa, portanto, como se todos os lucros pertencessem aos capitalistas e fossem poupados à taxa $s_r$. Como $I = S$, obtém-se $R = I/s_r$. Também se pode dizer que a poupança de cada grupo é proporcional ao capital que ele possui: $S_w/S_c = K_w/K_c$.
+
+Isso tem duas implicações:
+
+1.  **Quem determina a taxa de lucro.** Quem fixa a taxa de lucro de longo prazo são os capitalistas, por meio de $s_r$, e o ritmo de crescimento da economia, $g_n$. A distribuição funcional da renda continua sendo determinada pela lógica keynesiana, na qual o investimento comanda a poupança.
+2.  **Quem muda com a poupança dos trabalhadores.** Uma poupança maior dos trabalhadores altera a distribuição da riqueza, isto é, a parte do capital que eles possuem ($K_w$), mas não a divisão da renda entre lucros e salários.
+
+**Comparação com Kaldor**
+
+|   | Kaldor (1956) | Pasinetti (1962) |
+|------------------------|------------------------|------------------------|
+| Trabalhadores recebem lucros? | Não | Sim, sobre o capital que acumulam |
+| Participação dos lucros | $\dfrac{R}{Y} = \dfrac{1}{s_r - s_w}\dfrac{I}{Y} - \dfrac{s_w}{s_r - s_w}$ | $\dfrac{R}{Y} = \dfrac{1}{s_r}\dfrac{I}{Y}$ |
+| Taxa de lucro | $r = g_n/s_r$ apenas com $s_w = 0$ | $r = g_n/s_r$ para qualquer $s_w$ |
+| Papel de $s_w$ | Afeta a distribuição | Afeta só a riqueza de cada grupo |
+
+**Críticas e debate**
+
+**O regime Dual: Meade, Samuelson e Modigliani**
+
+O teorema suscitou um amplo debate na década de 1960, iniciado por Meade (1963, 1966) e por Samuelson e Modigliani (1966). Esses autores argumentaram que o equilíbrio descrito pela equação de Cambridge, o "regime de Pasinetti", é apenas uma das possibilidades. Haveria outro equilíbrio, igualmente geral, o "regime Dual" ou "anti-Pasinetti", no qual a relação produto-capital é determinada pela razão entre a taxa natural de crescimento e a propensão a poupar dos trabalhadores, e a taxa de lucro não segue a equação de Cambridge. Nesse regime os capitalistas seriam "eliminados" do sistema, o que ficou conhecido como a "eutanásia dos capitalistas" (OREIRO; MAGALHÃES, 2019, p. 486).
+
+A validade de cada regime depende, entre outros fatores, dos valores atribuídos às propensões a poupar. Samuelson e Modigliani usam um valor baixo para a propensão a poupar a partir dos lucros ($s_r$), em torno de 0,20, enquanto Kaldor (1966) defende valores de 0,7 a 0,8, o que amplia muito o espaço em que o regime de Pasinetti vale (OREIRO; MAGALHÃES, 2019, p. 488).
+
+**A resposta de Pasinetti e a controvérsia do capitaL**
+
+Pasinetti (1966, 1974) respondeu que os problemas de reversão de técnicas, identificados na controvérsia do capital, bastam para invalidar a teoria neoclássica da distribuição. Para ele, o regime Dual seria impossível ou, no máximo, improvável. Oreiro (2005), segundo Oreiro e Magalhães (2019, p. 487), mostra que o teorema de Meade-Samuelson-Modigliani não depende de uma forma específica da função de produção, mas que o teorema de Pasinetti é mais geral, porque permanece válido quando algumas hipóteses simplificadoras são relaxadas.
+
+**Kaldor (1966) e o Novo Teorema de Pasinetti**
+
+Kaldor (1966) não aceitou a ideia de uma "eutanásia dos capitalistas". Para ele, o debate partia de um vício de origem: associar a diferença entre as propensões a poupar a classes sociais distintas. Kaldor argumenta que a propensão a poupar a partir dos lucros é maior do que a partir dos salários por causa da natureza da renda empresarial, e não das preferências de um grupo de indivíduos. Em um mundo de economias dinâmicas de escala, as empresas precisam reter parte importante dos lucros para financiar a expansão e sobreviver à concorrência (OREIRO; MAGALHÃES, 2019, p. 487-488).
+
+Com base nisso, Kaldor deriva o chamado Novo Teorema de Pasinetti, no qual a taxa de lucro no crescimento balanceado é:
+
+$$r = \frac{g_n\,(1 - f)}{s_c}$$
+
+em que:
+
+- $f$ = fração do investimento financiada por títulos emitidos pelas empresas
+- $s_c$ = taxa de retenção de lucros das corporações, uma letra diferente de $s_r$
+
+Quando $f = 0$, volta-se à fórmula simples de Pasinetti, com a taxa de retenção das firmas no lugar da propensão dos capitalistas. A taxa de lucro continua independente das propensões a poupar das famílias (OREIRO; MAGALHÃES, 2019, p. 489-492).
+
+O Novo Teorema foi discutido por Davidson (1968), que viu nele um retorno à lei de Say, por Lavoie (1998), que o defendeu em um modelo neo-kaleckiano, e por Skott (2010), que criticou a função investimento desses modelos (OREIRO; MAGALHÃES, 2019, p. 492-506).
+
+**A hipótese de proporcionalidade**
+
+Outra linha de crítica questiona a consistência interna do modelo. O resultado de Pasinetti exige que a poupança de cada grupo seja proporcional ao capital que ele possui ($S_w/S = K_w/K$). Essa condição mantém fixa a distribuição da riqueza e, com isso, retira do investimento a autonomia que o modelo keynesiano supõe. Assim, a propensão a poupar dos trabalhadores não "some" do modelo: ela está implícita nessa hipótese.
+
+**Conclusão**
+
+O Teorema de Pasinetti completa o modelo de Kaldor apresentado na parte anterior. O ponto de contato é a taxa de lucro $r = g_n/s_r$, que Kaldor obtém com $s_w = 0$ e Pasinetti generaliza para qualquer $s_w$. O resultado reforça a ideia pós-keynesiana de que a distribuição de renda é determinada pelo ritmo de acumulação: quanto maior $g_n$, maior a taxa de lucro. Isso conecta com a parte seguinte do trabalho, que trata das Leis de Kaldor, em que o crescimento e a estrutura produtiva, em especial o papel da indústria, passam ao centro da análise.

@@ -111,8 +111,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Kaldor &amp; Pasinetti</span>
+    <a href="https://www.instagram.com/economianoquarto" class="navbar-brand navbar-brand-logo">
+    <img src="./logo-removebg.png" alt="" class="navbar-logo light-content">
+    <img src="./logo-removebg.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -163,6 +164,9 @@ window.Quarto = {
 <div class="mast-sub">
 <p>Distribuição de renda, taxa de lucro e regimes de crescimento</p>
 </div>
+<nav class="mast-nav">
+<a href="./index.html" class="active">Início</a> <a href="./Kaldor.html">Modelo de Kaldor</a> <a href="./pasinetti.html">Teorema de Pasinetti</a> <a href="./leis-kaldor.html">Leis de Kaldor e Brasil</a> <a href="./referencias.html">Referências</a>
+</nav>
 </div>
 <div class="wrap">
 <div class="home">
@@ -172,9 +176,9 @@ window.Quarto = {
 <div class="art">
 <p><span class="math display">\[\frac{R}{Y} = \frac{1}{s_r - s_w} \frac{I}{Y} - \frac{s_w}{s_r - s_w}\]</span></p>
 </div>
-<p><span class="tag">Teoria da Distribuição de Kaldor</span></p>
+<span class="tag">Teoria da Distribuição de Kaldor</span>
 <h2 class="h">
-<p><a href="./Kaldor.html">Capitalistas poupam mais: como a distribuição ajusta o investimento</a></p>
+<a href="./Kaldor.html">Capitalistas poupam mais: como a distribuição ajusta o investimento</a>
 </h2>
 <div class="deck">
 <p>
@@ -191,9 +195,9 @@ O modelo de Kaldor (1956) mostra como a taxa de investimento determina a partilh
 <div class="art">
 <p><span class="math display">\[\frac{P}{K} = \frac{1}{s_c} \cdot \frac{I}{K}\]</span></p>
 </div>
-<p><span class="tag">Teorema de Pasinetti</span></p>
+<span class="tag">Teorema de Pasinetti</span>
 <h2 class="h">
-<p><a href="./pasinetti.html">Por que a poupança dos trabalhadores não muda a taxa de lucro</a></p>
+<a href="./pasinetti.html">Por que a poupança dos trabalhadores não muda a taxa de lucro</a>
 </h2>
 <div class="deck">
 <p>
@@ -205,63 +209,53 @@ O Teorema de Pasinetti (1962) demonstra que a taxa de lucro de longo prazo depen
 </div>
 </div>
 </div>
-<div class="dots-container">
-
-</div>
 </div>
 <div class="side">
 <div class="item">
-<p><span class="tag">Crescimento Económico</span></p>
+<span class="tag">Crescimento Económico</span>
 <h3 class="h">
-<p><a href="./leis-kaldor.html">As Leis de Kaldor e o papel da indústria no crescimento</a></p>
+<a href="./leis-kaldor.html">As Leis de Kaldor e o papel da indústria no crescimento</a>
 </h3>
 <div class="by">
-<p>Por <strong> Lígia Alane &amp; Jullyane Alves</strong></p>
+<p>Por <strong>Lígia Alane &amp; Jullyane Alves</strong></p>
 </div>
 </div>
 <div class="item">
-<p><span class="tag">Referências</span></p>
+<span class="tag">Referências</span>
 <h3 class="h">
-<p><a href="./referencias.html">Material de Apoio</a></p>
+<a href="./referencias.html">Material de Apoio</a>
 </h3>
 <p style="font-size: 0.95rem; color: #333; margin-top: 0.5rem; line-height: 1.4;">
-</p><p>Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.</p>
-<p></p>
+Artigos originais de Kaldor e Pasinetti e textos de apoio do grupo.
+</p>
 </div>
 </div>
 </div>
 </div>
 <style>
+#quarto-header { display: none !important; }
 .noticia-slide { animation: fade 0.8s ease-in-out; }
 @keyframes fade { from { opacity: 0.3; } to { opacity: 1; } }
-.dots-container { text-align: center; margin-top: 2.2rem; padding-bottom: 1rem; }
-.dot { cursor: pointer; height: 10px; width: 10px; margin: 0 5px; background-color: #d9d9d9; border-radius: 50%; display: inline-block; transition: background-color 0.3s ease; }
-.dot.active, .dot:hover { background-color: #b3001b; }
 </style>
 <script>
 let slideIndex = 1;
-let timer;
 
-function mostrarSlide(n) {
-  clearTimeout(timer);
+function rodarSlides() {
   let slides = document.querySelectorAll('.noticia-slide');
-  let dots = document.querySelectorAll('.dot');
-  
   if(!slides || slides.length === 0) return;
 
   slides.forEach(s => s.style.display = "none");
-  dots.forEach(d => d.classList.remove("active"));
   
-  slideIndex = n > slides.length ? 1 : n < 1 ? slides.length : n;
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; }
   
   slides[slideIndex - 1].style.display = "block";
-  if(dots[slideIndex - 1]) dots[slideIndex - 1].classList.add("active");
   
-  timer = setTimeout(() => mostrarSlide(slideIndex + 1), 7000);
+  setTimeout(rodarSlides, 7000);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  timer = setTimeout(() => mostrarSlide(2), 7000);
+  setTimeout(rodarSlides, 7000);
 });
 </script>
 

@@ -5,6 +5,9 @@ project:
 website:
   title: "Kaldor & Pasinetti"
   navbar:
+    logo: "logo-removebg.png"
+    logo-href: "https://www.instagram.com/economianoquarto"
+    title: false
     background: "#000000"
     foreground: "#ffffff"
     search: false
