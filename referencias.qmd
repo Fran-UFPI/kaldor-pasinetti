@@ -4,6 +4,8 @@ subtitle: "Livros e atigos utilizados"
 toc: false
 ---
 
-
-- OREIRO, J. L.; MAGALHÃES, L. C. G. de. A equação de Cambridge e o Novo Teorema de Pasinetti nos modelos pós-keynesianos de crescimento e distribuição de renda. *Revista de Economia Política*, v. 39, n. 3 (156), p. 485-508, 2019.
-- SHASTRI, R. A.; NAGARAJ, A. *The Pasinetti paradox*. [S.l.]: EconWPA, [s.d.]. Working paper n. 9912149. Disponível em: https://econwpa.ub.uni-muenchen.de/econ-wp/test/papers/9912/9912149.pdf. Acesso em: 24 out. 2026. Versão completa publicada em *Asian Economic Review*, v. 27, n. 1-2, 1985.
+- LEMOS, B. A evolução do pensamento pós-keynesiano de crescimento e distribuição parte I: a análise neo-keynesiana. *Revista Foco*, São Paulo, v. 12, n. 2, p. 168-186, jul.-dez. 2019.
+- OREIRO, J. L.; FEIJÓ, C. A. Desindustrialização: conceituação, causas, efeitos e o caso brasileiro. *Revista de Economia Política*, São Paulo, v. 30, n. 2 (118), p. 219-232, abr.-jun. 2010.
+- OREIRO, J. L.; MAGALHÃES, L. C. G. de. A equação de Cambridge e o Novo Teorema de Pasinetti nos modelos pós-keynesianos de crescimento e distribuição de renda. *Revista de Economia Política*, São Paulo, v. 39, n. 3 (156), p. 485-508, 2019.
+- SHASTRI, R. A.; NAGARAJ, A. *The Pasinetti paradox*. \[S.l.\]: EconWPA, \[s.d.\]. Working paper n. 9912149. Disponível em: https://econwpa.ub.uni-muenchen.de/econ-wp/test/papers/9912/9912149.pdf. Acesso em: 24 out. 2026. Versão completa publicada em *Asian Economic Review*, v. 27, n. 1-2, 1985.
+- VIEIRA, B. E.; OLIVEIRA, J. G. de A.; SUGAHARA, R. N. A influência do setor governamental em modelos Kaldor-Pasinettianos de crescimento econômico e distribuição de renda. *O Eco da Graduação*, v. 9, n. 1, p. 63-99, 2024. Disponível em: https://ecodagraduacao.com.br/index.php/ecodagraduacao/article/view/147. Acesso em: 24 out. 2026.
