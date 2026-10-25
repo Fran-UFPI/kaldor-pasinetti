@@ -5,7 +5,7 @@ editor: visual
 ---
 
 ::: {fig-align="center"}
-![](imagem/kaldor.jpg){width="394"}
+![](imagem/kaldor.jpg){width="393"}
 
 *Nicholas Kaldor (1908–1986)*\
 [Fonte: Alchetron](https://alchetron.com/Nicholas-Kaldor)
