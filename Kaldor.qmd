@@ -15,7 +15,7 @@ editor: visual
 
 *Nicholas Kaldor (1908–1986)*
 
-Nicholas Kaldor nasceu em Budapeste, na Hungria, em 1908. Ao longo de sua trajetória, consolidou-se como um dos principais expoentes da Escola Pós-Keynesiana, desenvolvendo suas principais contribuições acadêmicas na Universidade de Cambridge, no Reino Unido. Kaldor faleceu em 1986, na Inglaterra. Na economia, ficou mundialmente conhecido por argumentar que o investimento determina a poupança e os lucros, além de formular as chamadas Leis do Crescimento Econômico, que destacam a indústria como o principal motor do desenvolvimento.
+Nascido em Budapeste, na Hungria, destacou-se como um dos principais expoentes da Escola Pós-Keynesiana na Universidade de Cambridge, falecendo na Inglaterra em 1986. Ficou mundialmente conhecido por argumentar que o investimento determina a poupança e os lucros, além de formular as Leis do Crescimento Econômico, que destacam a indústria como o principal motor do desenvolvimento.
 
 **Introdução**
 

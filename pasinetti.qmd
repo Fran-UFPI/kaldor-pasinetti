@@ -15,7 +15,7 @@ editor: visual
 
 *Luigi Pasinetti (1930–2010)*
 
-Luigi Pasinetti nasceu em 1930 na cidade de Zanica, na província de Bérgamo, na Itália. Também vinculado à tradição de Cambridge e discípulo de Piero Sraffa, Pasinetti foi um dos nomes mais importantes da economia pós-keynesiana internacional. Ele faleceu em 2010, em Milão, na Itália. Sua grande contribuição teórica foi o aprimoramento do modelo de distribuição de renda de Kaldor, demonstrando que, no longo prazo, a taxa de lucro de uma economia depende estritamente da propensão a poupar dos capitalistas e da taxa de crescimento natural.
+Nascido em Zanica, na província de Bérgamo, Itália, foi discípulo de Piero Sraffa e um dos nomes mais importantes da tradição de Cambridge, falecendo em Milão em 2023. Ficou conhecido por aprimorar o modelo de distribuição de renda de Kaldor, demonstrando que, no longo prazo, a taxa de lucro de uma economia depende estritamente da propensão a poupar dos capitalistas e da taxa de crescimento natural.
 
 **Introdução**
 
@@ -150,7 +150,7 @@ Isso tem duas implicações:
 **Comparação com Kaldor**
 
 |   | Kaldor (1956) | Pasinetti (1962) |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Trabalhadores recebem lucros? | Não | Sim, sobre o capital que acumulam |
 | Participação dos lucros | $\dfrac{R}{Y} = \dfrac{1}{s_r - s_w}\dfrac{I}{Y} - \dfrac{s_w}{s_r - s_w}$ | $\dfrac{R}{Y} = \dfrac{1}{s_r}\dfrac{I}{Y}$ |
 | Taxa de lucro | $r = g_n/s_r$ apenas com $s_w = 0$ | $r = g_n/s_r$ para qualquer $s_w$ |
