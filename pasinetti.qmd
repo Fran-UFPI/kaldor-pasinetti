@@ -150,7 +150,7 @@ Isso tem duas implicações:
 **Comparação com Kaldor**
 
 |   | Kaldor (1956) | Pasinetti (1962) |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Trabalhadores recebem lucros? | Não | Sim, sobre o capital que acumulam |
 | Participação dos lucros | $\dfrac{R}{Y} = \dfrac{1}{s_r - s_w}\dfrac{I}{Y} - \dfrac{s_w}{s_r - s_w}$ | $\dfrac{R}{Y} = \dfrac{1}{s_r}\dfrac{I}{Y}$ |
 | Taxa de lucro | $r = g_n/s_r$ apenas com $s_w = 0$ | $r = g_n/s_r$ para qualquer $s_w$ |
