@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: _site
 
+lang: pt-BR
+
 website:
   title: "Kaldor & Pasinetti"
   navbar:
