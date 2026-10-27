@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://Fran-UFPI.github.io/kaldor-pasinetti/sitemap.xml
